@@ -46,7 +46,7 @@ export function Transactions() {
     deleteTransaction(id);
   };
 
-  const selectCls = `px-3 py-1.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-200 appearance-none ${
+  const selectCls = `px-3 py-1.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-200 appearance-none ${
     dark
       ? "bg-gray-800 border-gray-700 text-gray-300"
       : "bg-gray-50 border-gray-100 text-gray-500"
@@ -62,7 +62,7 @@ export function Transactions() {
         </div>
         <button
           onClick={() => setShowModal(true)}
-          className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-violet-500 to-indigo-600 text-white rounded-xl hover:from-violet-600 hover:to-indigo-700 transition shadow-lg shadow-violet-200 dark:shadow-violet-900/30"
+          className="flex items-center gap-2 px-4 py-2.5 bg-cyan-600 text-white rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-200 dark:shadow-cyan-900/30"
           style={{ fontSize: "0.875rem", fontWeight: 600 }}
         >
           <Plus className="w-4 h-4" />
@@ -79,7 +79,7 @@ export function Transactions() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search transactions..."
-            className={`w-full pl-9 pr-4 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-200 focus:border-violet-300 transition ${
+            className={`w-full pl-9 pr-4 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-200 focus:border-cyan-300 transition ${
               dark
                 ? "bg-gray-800 border-gray-700 text-gray-100 placeholder-gray-600"
                 : "bg-gray-50 border-gray-100 text-gray-800"
@@ -97,7 +97,7 @@ export function Transactions() {
                 onClick={() => setFilterType(t)}
                 className={`px-3 py-1.5 rounded-lg capitalize transition ${
                   filterType === t
-                    ? "bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400"
+                    ? "bg-cyan-100 dark:bg-cyan-900/40 text-cyan-600 dark:text-cyan-400"
                     : dark
                     ? "bg-gray-800 text-gray-400 hover:bg-gray-700"
                     : "bg-gray-50 text-gray-400 hover:bg-gray-100"

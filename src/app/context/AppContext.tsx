@@ -27,7 +27,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return (localStorage.getItem("sw-theme") as Theme) || "light";
   });
   const [userName, setUserNameState] = useState(() => {
-    return localStorage.getItem("sw-username") || "Arjun Sharma";
+    return localStorage.getItem("sw-username") || "Soumyajit Samal";
   });
 
   useEffect(() => {

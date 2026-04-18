@@ -101,7 +101,7 @@ export function Analytics() {
         <select
           value={selectedMonth}
           onChange={(e) => setSelectedMonth(parseInt(e.target.value))}
-          className={`px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-200 shadow-sm ${
+          className={`px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-200 shadow-sm ${
             dark ? "bg-gray-900 border-gray-700 text-gray-300" : "bg-white border-gray-200 text-gray-600"
           }`}
           style={{ fontSize: "0.85rem" }}
@@ -129,8 +129,8 @@ export function Analytics() {
         </div>
         <div className={cardCls + " p-4"}>
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-violet-50 dark:bg-violet-900/20 rounded-xl flex items-center justify-center">
-              <Award className="w-4 h-4 text-violet-500" />
+            <div className="w-9 h-9 bg-cyan-50 dark:bg-cyan-900/20 rounded-xl flex items-center justify-center">
+              <Award className="w-4 h-4 text-cyan-500" />
             </div>
             <div>
               <p className="text-gray-400 dark:text-gray-500" style={{ fontSize: "0.75rem" }}>Top Category</p>

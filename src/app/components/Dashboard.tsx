@@ -97,7 +97,7 @@ export function Dashboard() {
         </div>
         <button
           onClick={() => setShowModal(true)}
-          className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-violet-500 to-indigo-600 text-white rounded-xl hover:from-violet-600 hover:to-indigo-700 transition shadow-lg shadow-violet-200 dark:shadow-violet-900/30"
+          className="flex items-center gap-2 px-4 py-2.5 bg-cyan-600 text-white rounded-xl hover:bg-cyan-700 transition shadow-lg shadow-cyan-200 dark:shadow-cyan-900/30"
           style={{ fontSize: "0.875rem", fontWeight: 600 }}
         >
           <Plus className="w-4 h-4" />
@@ -108,12 +108,12 @@ export function Dashboard() {
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Balance */}
-        <div className="bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl p-5 text-white shadow-lg shadow-violet-200 dark:shadow-violet-900/30">
+        <div className="bg-cyan-600 rounded-2xl p-5 text-white shadow-lg shadow-cyan-200 dark:shadow-cyan-900/30">
           <div className="flex items-center justify-between mb-3">
             <div className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center">
               <Wallet className="w-4 h-4 text-white" />
             </div>
-            <span className="text-violet-200" style={{ fontSize: "0.75rem", fontWeight: 600 }}>THIS MONTH</span>
+            <span className="text-cyan-200" style={{ fontSize: "0.75rem", fontWeight: 600 }}>THIS MONTH</span>
           </div>
           <p className="text-white/70" style={{ fontSize: "0.8rem" }}>Net Balance</p>
           <p className="text-white mt-1" style={{ fontWeight: 700, fontSize: "1.8rem" }}>
@@ -247,7 +247,7 @@ export function Dashboard() {
           <h3 className="text-gray-800 dark:text-gray-200" style={{ fontWeight: 700, fontSize: "0.95rem" }}>Recent Transactions</h3>
           <button
             onClick={() => navigate("/transactions")}
-            className="flex items-center gap-1 text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300 transition"
+            className="flex items-center gap-1 text-cyan-500 hover:text-cyan-600 dark:text-cyan-400 dark:hover:text-cyan-300 transition"
             style={{ fontSize: "0.8rem", fontWeight: 600 }}
           >
             View all <ChevronRight className="w-3.5 h-3.5" />

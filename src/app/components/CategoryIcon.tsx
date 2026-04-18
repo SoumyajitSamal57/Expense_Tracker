@@ -14,10 +14,10 @@ const categoryConfig: Record<
   "Entertainment":  { icon: Film,         color: "text-purple-500", bg: "bg-purple-50",  darkBg: "dark:bg-purple-900/20"  },
   "Health":         { icon: Heart,        color: "text-rose-500",   bg: "bg-rose-50",    darkBg: "dark:bg-rose-900/20"    },
   "Housing":        { icon: Home,         color: "text-teal-500",   bg: "bg-teal-50",    darkBg: "dark:bg-teal-900/20"    },
-  "Education":      { icon: BookOpen,     color: "text-indigo-500", bg: "bg-indigo-50",  darkBg: "dark:bg-indigo-900/20"  },
+  "Education":      { icon: BookOpen,     color: "text-amber-500", bg: "bg-amber-50",  darkBg: "dark:bg-amber-900/20"  },
   "Travel":         { icon: Plane,        color: "text-sky-500",    bg: "bg-sky-50",     darkBg: "dark:bg-sky-900/20"     },
   "Salary":         { icon: Briefcase,    color: "text-emerald-500",bg: "bg-emerald-50", darkBg: "dark:bg-emerald-900/20" },
-  "Freelance":      { icon: Code,         color: "text-violet-500", bg: "bg-violet-50",  darkBg: "dark:bg-violet-900/20"  },
+  "Freelance":      { icon: Code,         color: "text-cyan-500", bg: "bg-cyan-50",  darkBg: "dark:bg-cyan-900/20"  },
   "Investment":     { icon: TrendingUp,   color: "text-green-500",  bg: "bg-green-50",   darkBg: "dark:bg-green-900/20"   },
   "Other":          { icon: HelpCircle,   color: "text-gray-500",   bg: "bg-gray-50",    darkBg: "dark:bg-gray-800"       },
 };

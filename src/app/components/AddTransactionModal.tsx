@@ -98,7 +98,7 @@ export function AddTransactionModal({ onClose, defaultType = "expense" }: Props)
                 value={amount}
                 onChange={(e) => { setAmount(e.target.value); setError(""); }}
                 placeholder="0"
-                className={`w-full pl-8 pr-4 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-violet-400 transition ${
+                className={`w-full pl-8 pr-4 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-400 transition ${
                   dark
                     ? "bg-gray-800 border-gray-700 text-gray-100 placeholder-gray-600"
                     : "bg-gray-50 border-gray-200 text-gray-900"
@@ -115,7 +115,7 @@ export function AddTransactionModal({ onClose, defaultType = "expense" }: Props)
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value as Category)}
-              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-violet-400 transition appearance-none ${
+              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-400 transition appearance-none ${
                 dark
                   ? "bg-gray-800 border-gray-700 text-gray-100"
                   : "bg-gray-50 border-gray-200 text-gray-900"
@@ -135,7 +135,7 @@ export function AddTransactionModal({ onClose, defaultType = "expense" }: Props)
               value={description}
               onChange={(e) => { setDescription(e.target.value); setError(""); }}
               placeholder="What was this for?"
-              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-violet-400 transition ${
+              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-400 transition ${
                 dark
                   ? "bg-gray-800 border-gray-700 text-gray-100 placeholder-gray-600"
                   : "bg-gray-50 border-gray-200 text-gray-900"
@@ -152,7 +152,7 @@ export function AddTransactionModal({ onClose, defaultType = "expense" }: Props)
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-violet-400 transition ${
+              className={`w-full px-3 py-2.5 border rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-300 focus:border-cyan-400 transition ${
                 dark
                   ? "bg-gray-800 border-gray-700 text-gray-100"
                   : "bg-gray-50 border-gray-200 text-gray-900"
@@ -179,8 +179,8 @@ export function AddTransactionModal({ onClose, defaultType = "expense" }: Props)
               type="submit"
               className={`flex-1 py-2.5 rounded-xl text-white transition shadow-md ${
                 type === "expense"
-                  ? "bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600"
-                  : "bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600"
+                  ? "bg-rose-500 hover:bg-rose-600"
+                  : "bg-emerald-500 hover:bg-emerald-600"
               }`}
               style={{ fontWeight: 600, fontSize: "0.875rem" }}
             >

@@ -65,16 +65,16 @@ export function Budget() {
       </div>
 
       {/* Overall */}
-      <div className="bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl p-5 text-white shadow-lg shadow-violet-200 dark:shadow-violet-900/30">
+      <div className="bg-cyan-600 rounded-2xl p-5 text-white shadow-lg shadow-cyan-200 dark:shadow-cyan-900/30">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <p className="text-violet-200" style={{ fontSize: "0.8rem" }}>Total Monthly Budget</p>
+            <p className="text-cyan-200" style={{ fontSize: "0.8rem" }}>Total Monthly Budget</p>
             <p className="text-white mt-1" style={{ fontWeight: 700, fontSize: "1.8rem" }}>
               {formatINR(totalBudget)}
             </p>
           </div>
           <div className="text-right">
-            <p className="text-violet-200" style={{ fontSize: "0.8rem" }}>Spent So Far</p>
+            <p className="text-cyan-200" style={{ fontSize: "0.8rem" }}>Spent So Far</p>
             <p className="text-white mt-1" style={{ fontWeight: 700, fontSize: "1.8rem" }}>
               {formatINR(totalSpent)}
             </p>
@@ -89,10 +89,10 @@ export function Budget() {
           />
         </div>
         <div className="flex justify-between mt-2">
-          <span className="text-violet-200" style={{ fontSize: "0.75rem" }}>
+          <span className="text-cyan-200" style={{ fontSize: "0.75rem" }}>
             {formatINR(remaining)} remaining
           </span>
-          <span className="text-violet-200" style={{ fontSize: "0.75rem" }}>
+          <span className="text-cyan-200" style={{ fontSize: "0.75rem" }}>
             {pctUsed.toFixed(0)}% used
           </span>
         </div>
@@ -166,8 +166,8 @@ export function Budget() {
                         autoFocus
                         className={`w-24 border-b focus:outline-none ${
                           dark
-                            ? "border-violet-500 bg-transparent text-violet-400"
-                            : "border-violet-400 text-violet-600"
+                            ? "border-cyan-500 bg-transparent text-cyan-400"
+                            : "border-cyan-400 text-cyan-600"
                         }`}
                         style={{ fontSize: "0.78rem", fontWeight: 600 }}
                       />
@@ -183,14 +183,14 @@ export function Budget() {
                   {isEditing ? (
                     <button
                       onClick={() => handleSave(category)}
-                      className="w-6 h-6 bg-violet-100 dark:bg-violet-900/50 rounded-lg flex items-center justify-center hover:bg-violet-200 dark:hover:bg-violet-800 transition"
+                      className="w-6 h-6 bg-cyan-100 dark:bg-cyan-900/50 rounded-lg flex items-center justify-center hover:bg-cyan-200 dark:hover:bg-cyan-800 transition"
                     >
-                      <Check className="w-3.5 h-3.5 text-violet-600 dark:text-violet-400" />
+                      <Check className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
                     </button>
                   ) : (
                     <button
                       onClick={() => handleEdit(category, limit)}
-                      className="text-violet-400 hover:text-violet-600 dark:hover:text-violet-300 transition"
+                      className="text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition"
                       style={{ fontSize: "0.72rem", fontWeight: 600 }}
                     >
                       Edit
